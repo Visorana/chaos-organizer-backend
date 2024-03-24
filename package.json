@@ -1,0 +1,32 @@
+{
+    "name": "chaos-organizer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "prestart": "npm install",
+        "start": "forever server.js",
+        "watch": "forever -w server.js"
+    },
+    "author": "visorana",
+    "license": "ISC",
+    "dependencies": {
+        "forever": "^4.0.3",
+        "glob-parent": "^6.0.1",
+        "koa": "^2.13.1",
+        "koa-body": "^4.2.0",
+        "koa-router": "^10.0.0",
+        "koa2-cors": "^2.0.6",
+        "koa-static": "^5.0.0",
+        "uuid": "^9.0.1",
+        "ws": "^8.16.0"
+    },
+    "engines": {
+        "node": "20.x"
+    },
+    "overrides": {
+        "glob-parent": "$glob-parent",
+        "minimist": "1.2.6",
+        "nconf": "0.11.4"
+    }
+}
